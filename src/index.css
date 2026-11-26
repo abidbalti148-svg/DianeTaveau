@@ -1,0 +1,85 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "Playfair Display", Georgia, Cambria, "Times New Roman", serif;
+  --font-sans: "DM Sans", ui-sans-serif, system-ui, -apple-system, sans-serif;
+  --color-theatre-black: #000000;
+  --color-theatre-charcoal: #111111;
+  --color-theatre-gold: #F9BD0B;
+  --color-theatre-kicker: #C99D38;
+  --color-theatre-crimson: #6E1015;
+}
+
+@layer base {
+  html {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: var(--font-sans);
+    scroll-behavior: smooth;
+    overflow-x: clip;
+  }
+
+  body {
+    background-color: #000000;
+    color: #ffffff;
+    overflow-x: clip;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: var(--font-serif);
+    text-wrap: balance;
+  }
+}
+
+.tabular-nums {
+  font-variant-numeric: tabular-nums;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+.theatre-spotlight-wash {
+  background-color: #090306;
+  background-image:
+    radial-gradient(ellipse 68% 48% at 50% 6%, rgba(249, 189, 11, 0.11) 0%, rgba(201, 157, 56, 0.04) 45%, transparent 76%),
+    radial-gradient(ellipse 42% 80% at 0% 48%, rgba(115, 16, 22, 0.34) 0%, rgba(58, 7, 11, 0.14) 55%, transparent 86%),
+    radial-gradient(ellipse 42% 80% at 100% 48%, rgba(115, 16, 22, 0.34) 0%, rgba(58, 7, 11, 0.14) 55%, transparent 86%);
+}
+
+.theatre-velvet-wings {
+  background-image: repeating-linear-gradient(
+    90deg,
+    rgba(138, 20, 26, 0.24) 0px,
+    rgba(48, 5, 8, 0.08) 20px,
+    rgba(10, 2, 4, 0.35) 38px,
+    rgba(110, 16, 21, 0.2) 56px
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.35) 12%,
+    transparent 26%,
+    transparent 74%,
+    rgba(0, 0, 0, 0.35) 88%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+  mask-image: linear-gradient(
+    90deg,
+    rgba(0, 0, 0, 0.95) 0%,
+    rgba(0, 0, 0, 0.35) 12%,
+    transparent 26%,
+    transparent 74%,
+    rgba(0, 0, 0, 0.35) 88%,
+    rgba(0, 0, 0, 0.95) 100%
+  );
+}
+
+.theatre-stage-beams {
+  background-image:
+    conic-gradient(from 158deg at 22% -10%, transparent 0deg, rgba(249, 189, 11, 0.08) 14deg, transparent 30deg),
+    conic-gradient(from 172deg at 78% -10%, transparent 0deg, rgba(249, 189, 11, 0.08) 14deg, transparent 30deg);
+}
+

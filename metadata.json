@@ -1,0 +1,8 @@
+{
+  "name": "Remix Diane Taveau — Author, Actor \u0026 Director",
+  "description": "Books, theatre rules, and stage stories by Diane Taveau: The Rules, The Rules: School Edition, and The Snail and the Sloth.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
